@@ -1,0 +1,172 @@
+1
+00:00:00,090 --> 00:00:00,930
+In this video,
+
+2
+00:00:00,960 --> 00:00:05,100
+I'm going to walk through the process to install PyCharm on Mac. Now,
+
+3
+00:00:05,100 --> 00:00:08,880
+if you're on a Windows computer and you've already installed PyCharm,
+
+4
+00:00:08,940 --> 00:00:10,290
+then you can skip this video.
+
+5
+00:00:10,890 --> 00:00:13,860
+So you should have now downloaded the PyCharm installer.
+
+6
+00:00:14,250 --> 00:00:17,820
+So go ahead and open up the DMG file. Now,
+
+7
+00:00:17,820 --> 00:00:22,680
+when you see this window, drag the icon for PyCharm into the applications
+
+8
+00:00:22,680 --> 00:00:26,730
+folder. And now you can go to spotlight and search for PyCharm.
+
+9
+00:00:27,360 --> 00:00:30,930
+Then go ahead and click on it to open it up. Now,
+
+10
+00:00:30,960 --> 00:00:35,960
+make sure that you have admin privileges and go ahead and say open. And then
+
+11
+00:00:36,240 --> 00:00:40,680
+agree to the privacy policy and decide if you want to share data with them or
+
+12
+00:00:40,680 --> 00:00:44,310
+not. Now you can select never used 
+
+13
+00:00:44,310 --> 00:00:46,410
+PyCharm and click next.
+
+14
+00:00:46,980 --> 00:00:51,480
+Then you can pick between dark theme or light theme and click next.
+
+15
+00:00:52,050 --> 00:00:56,160
+And then go ahead and click on skip remaining and set defaults.
+
+16
+00:00:57,630 --> 00:01:01,860
+Now we can go ahead and create our first project in PyCharm.
+
+17
+00:01:02,730 --> 00:01:04,620
+Name your project whatever you want,
+
+18
+00:01:05,070 --> 00:01:10,070
+but it's really important that you click on this drop-down to check that your
+
+19
+00:01:10,140 --> 00:01:15,140
+project interpreter, and especially the base interpreter, is set to the latest
+
+20
+00:01:16,020 --> 00:01:20,820
+version of Python that you installed, which in my case is Python 3.8.
+
+21
+00:01:22,080 --> 00:01:24,750
+Now, if you're running on a Mac or a Linux,
+
+22
+00:01:24,900 --> 00:01:28,200
+you might see several versions of Python in that dropdown list.
+
+23
+00:01:28,560 --> 00:01:32,670
+So make sure that you select the latest version that you installed and then
+
+24
+00:01:32,670 --> 00:01:36,810
+click next. Once it has configured and created your new project,
+
+25
+00:01:37,110 --> 00:01:38,310
+this is what you should see.
+
+26
+00:01:38,970 --> 00:01:42,600
+And now you're going to go into your project folder, right-click on it,
+
+27
+00:01:42,960 --> 00:01:47,130
+and then go to new -> file. Now on a Mac, right
+
+28
+00:01:47,130 --> 00:01:49,800
+click is also the same as control clicking.
+
+29
+00:01:49,830 --> 00:01:54,120
+So you could hold down the control key and then click on the project folder.
+
+30
+00:01:54,480 --> 00:01:56,610
+And again, choose new, and then file.
+
+31
+00:01:57,240 --> 00:02:01,500
+And the file we're going to create is going to be our main.py. Now,
+
+32
+00:02:01,530 --> 00:02:05,760
+inside here, all that we're going to do is just print hello world.
+
+33
+00:02:07,410 --> 00:02:10,680
+And we're going to run this code and make sure that it works.
+
+34
+00:02:11,010 --> 00:02:16,010
+So go to run and then click on this run button and select the main Python file
+
+35
+00:02:18,780 --> 00:02:23,280
+as the one you want to run and then down here, you should see the run tab
+
+36
+00:02:23,340 --> 00:02:24,690
+pop up all of a sudden,
+
+37
+00:02:25,200 --> 00:02:29,400
+and you should see your hello world printed in the console.
+
+38
+00:02:30,630 --> 00:02:33,690
+And then it'll say process finished with exit code zero,
+
+39
+00:02:33,930 --> 00:02:35,700
+zero is a success,
+
+40
+00:02:36,030 --> 00:02:40,380
+and that means you're now all set up and you're ready to start using PyCharm
+
+41
+00:02:40,740 --> 00:02:43,680
+as if it were any other Python editor.
+
+42
+00:02:44,160 --> 00:02:47,760
+So anything that you've done in Repl.it you can now do in PyCharm.
+
+43
+00:02:48,120 --> 00:02:52,650
+You can create new files, you can write the files and you can run those files.
+

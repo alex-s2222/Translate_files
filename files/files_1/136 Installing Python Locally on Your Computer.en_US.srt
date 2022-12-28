@@ -1,0 +1,232 @@
+1
+00:00:00,270 --> 00:00:03,390
+Hey, welcome back to 100 Days of Code.
+
+2
+00:00:03,990 --> 00:00:11,090
+This is Angela from the App Brewery, and today is day 15 where we're going to set up our local development
+
+3
+00:00:11,160 --> 00:00:15,780
+environment for Python and we're going to be building a Coffee Machine project.
+
+4
+00:00:16,470 --> 00:00:17,850
+So when we designed the course,
+
+5
+00:00:17,850 --> 00:00:23,390
+we really wanted you to get up and running as fast as possible and start coding straight away.
+
+6
+00:00:23,880 --> 00:00:30,150
+But as our project gets more and more complex, then it's really important to start thinking about setting
+
+7
+00:00:30,150 --> 00:00:32,250
+up a proper development environment.
+
+8
+00:00:32,880 --> 00:00:38,760
+Now, if you were a chef, then you need really sharp knives. And as a programmer, you need a good development
+
+9
+00:00:38,760 --> 00:00:39,440
+environment.
+
+10
+00:00:39,660 --> 00:00:43,680
+In today's lesson, I'm going to show you how to set up my favorite IDE,
+
+11
+00:00:44,220 --> 00:00:48,000
+and the IDE stands for Integrated Development Environment.
+
+12
+00:00:48,690 --> 00:00:53,430
+This is a piece of software that will help you as you're creating your code,
+
+13
+00:00:53,730 --> 00:00:59,550
+and it's going to do a whole bunch of things for you including things like linting your code, finding
+
+14
+00:00:59,550 --> 00:01:06,270
+errors in it, giving you guidance on your coding style, helping you debug issues, just making life
+
+15
+00:01:06,270 --> 00:01:09,630
+easier for you as you start writing more and more code.
+
+16
+00:01:10,260 --> 00:01:14,120
+This is the moment where you're graduating from a newbie developer.
+
+17
+00:01:14,220 --> 00:01:20,280
+It's like as if you've gone into the mountains, you've fetched water for this old sensei for like 20
+
+18
+00:01:20,280 --> 00:01:23,310
+years and finally he's going to show you how to use a sword.
+
+19
+00:01:24,030 --> 00:01:27,030
+This is going to be the equivalent of our sword.
+
+20
+00:01:27,630 --> 00:01:32,400
+Now, in terms of development environment, there's actually a whole bunch to choose from.
+
+21
+00:01:32,880 --> 00:01:36,340
+And you might have heard of some of these like Jupiter or Spider,
+
+22
+00:01:36,360 --> 00:01:36,640
+VS
+
+23
+00:01:36,660 --> 00:01:40,200
+Code and some of them we've already used like Thonny.
+
+24
+00:01:40,920 --> 00:01:44,910
+But the one that we're going to use is something called PyCharm.
+
+25
+00:01:45,330 --> 00:01:51,510
+And this is an Intelligent Development Environment, an IDE, that is specialized for Python.
+
+26
+00:01:52,020 --> 00:01:58,590
+The tool has been sharpened especially for python coding, and it's what the professionals use. In
+
+27
+00:01:58,590 --> 00:01:59,520
+the coming lessons,
+
+28
+00:01:59,520 --> 00:02:01,860
+we're going to get really familiar with this tool.
+
+29
+00:02:02,040 --> 00:02:08,390
+And gradually, I want to show you how it can help you become a better and more productive developer.
+
+30
+00:02:09,180 --> 00:02:14,820
+But before we can get started installing PyCharm, we first have to get the latest version of Python
+
+31
+00:02:15,090 --> 00:02:17,220
+installed on your computer.
+
+32
+00:02:18,120 --> 00:02:25,110
+In the course resources, you can go ahead and find the download link for Python. Then once you're
+
+33
+00:02:25,110 --> 00:02:29,230
+there, it should automatically detect your current operating system.
+
+34
+00:02:29,790 --> 00:02:36,840
+So here I am on Windows and it says download the latest version for Windows. And then if you click on
+
+35
+00:02:36,840 --> 00:02:41,250
+the big download button, it'll ensure that you get the latest version of Python.
+
+36
+00:02:41,820 --> 00:02:46,260
+Now, it's actually a very small file, so it shouldn't take very long to download.
+
+37
+00:02:47,070 --> 00:02:51,510
+And once it's complete, go ahead and open up that .exe file.
+
+38
+00:02:52,320 --> 00:02:59,760
+Now, go ahead and make sure that the checkbox for Add Python 3.8 to Path is checked and
+
+39
+00:02:59,760 --> 00:03:01,890
+then leave everything else as it is
+
+40
+00:03:01,890 --> 00:03:08,740
+and click on Install now. And make sure that you have admin privileges while you're installing
+
+41
+00:03:09,390 --> 00:03:15,870
+so you have to be logged on as the administrator. And say yes to any of the prompts.
+
+42
+00:03:16,140 --> 00:03:22,590
+Now, installation should only take a few minutes. And once it's done, you might get a hint here saying
+
+43
+00:03:22,590 --> 00:03:25,260
+"Disable path length limit."
+
+44
+00:03:25,830 --> 00:03:28,710
+If you see that, then go ahead and click on it.
+
+45
+00:03:30,540 --> 00:03:37,610
+And again, say yes for allow. And then you're done and you can close off the wizard. If you're on a Mac,
+
+46
+00:03:37,650 --> 00:03:39,840
+the process is virtually identical.
+
+47
+00:03:40,290 --> 00:03:46,860
+Once you head over to the link from the course resources, you should see it automatically, let's you download
+
+48
+00:03:46,860 --> 00:03:48,330
+the latest version for Mac.
+
+49
+00:03:48,870 --> 00:03:53,520
+And once the download is complete, you can go through the wizard clicking
+
+50
+00:03:53,520 --> 00:03:59,280
+continue agreeing to everything that they ask you to agree and click install.
+
+51
+00:04:00,350 --> 00:04:06,200
+And again, you'll need to be on the administrator account and type in your password to allow Python
+
+52
+00:04:06,200 --> 00:04:13,430
+to be installed on your computer. Once installation is completed, it should open up this folder and
+
+53
+00:04:13,430 --> 00:04:19,100
+you should see Python 3.8 or a later version like 3.9 or 3.10.
+
+54
+00:04:19,520 --> 00:04:25,250
+But as long as you see this, then you've been successful and you can delete the installer from your
+
+55
+00:04:25,250 --> 00:04:25,890
+computer.
+
+56
+00:04:26,570 --> 00:04:32,990
+So now you should have successfully installed Python onto your computer, and we're ready to proceed to
+
+57
+00:04:32,990 --> 00:04:36,050
+the next step. Head over to the next lesson
+
+58
+00:04:36,050 --> 00:04:38,330
+and we're going to download and install ПайЧарм.
+

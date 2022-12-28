@@ -1,0 +1,792 @@
+1
+00:00:00,480 --> 00:00:05,480
+Up until now we've been using Repl.it as our code editor and Repl.it has a
+
+2
+00:00:06,330 --> 00:00:11,330
+number of great features like how easy it is to share code and to fork copies of
+
+3
+00:00:12,720 --> 00:00:17,370
+the same code so that you can always get the starting code and the final code.
+
+4
+00:00:18,120 --> 00:00:21,090
+But Repl.it does have its limitations.
+
+5
+00:00:21,600 --> 00:00:26,600
+And as you're becoming more and more advanced and you start building more
+
+6
+00:00:26,610 --> 00:00:31,380
+complex projects, you'll start to feel the constraints of a simple text editor
+
+7
+00:00:31,410 --> 00:00:36,390
+like Repl.it. Now PyCharm is a tool that's used by professionals.
+
+8
+00:00:36,900 --> 00:00:41,280
+And I want to show you a couple of features so that you can see firsthand why
+
+9
+00:00:41,280 --> 00:00:44,340
+PyCharm is so popular with Python developers.
+
+10
+00:00:44,640 --> 00:00:48,450
+And the first thing I really like about it is also a very, very basic thing,
+
+11
+00:00:48,840 --> 00:00:53,040
+it's spellcheck for the English words that you use in your code.
+
+12
+00:00:53,610 --> 00:00:55,710
+This just means that while you're writing code,
+
+13
+00:00:55,710 --> 00:00:59,970
+you are creating names for your variables, creating your keys, your values,
+
+14
+00:01:00,450 --> 00:01:05,160
+or your print statements, that it makes sure that the English that you write,
+
+15
+00:01:05,160 --> 00:01:09,060
+the parts that's not actually code, is actually spell-checked
+
+16
+00:01:09,240 --> 00:01:12,330
+and you won't believe how many times this will save your skin.
+
+17
+00:01:13,050 --> 00:01:15,840
+Here's an example, something that's really,
+
+18
+00:01:15,840 --> 00:01:19,380
+really sensitive to spelling is a dictionary.
+
+19
+00:01:19,770 --> 00:01:24,770
+We all know that when we're using a dictionary and let's say we wanted to print
+
+20
+00:01:26,100 --> 00:01:31,100
+one of the values from our dictionary. We're taking our contacts and getting hold
+
+21
+00:01:31,860 --> 00:01:36,720
+of James's details, and then we're trying to get hold of his phone number.
+
+22
+00:01:37,170 --> 00:01:40,230
+Now, if you type this wrong, for example,
+
+23
+00:01:40,230 --> 00:01:44,910
+if I wrote phone number without an 'e', and I try to run this,
+
+24
+00:01:45,090 --> 00:01:47,100
+then you'll see, I get an error.
+
+25
+00:01:47,610 --> 00:01:52,050
+But the spell check should already alert you to the issue before you even hit
+
+26
+00:01:52,050 --> 00:01:55,590
+run. See how this is underlined with a squiggle
+
+27
+00:01:55,890 --> 00:01:58,890
+and it tells you that there's a typo in the word phon,
+
+28
+00:01:59,310 --> 00:02:02,610
+and you can click change to phone maybe.
+
+29
+00:02:03,360 --> 00:02:06,300
+And it's just a subtle hint to say, 'Hey,
+
+30
+00:02:06,570 --> 00:02:10,800
+I think maybe you got that wrong. Just DoubleCheck.' And indeed,
+
+31
+00:02:10,830 --> 00:02:11,970
+once we fix that,
+
+32
+00:02:12,270 --> 00:02:16,290
+then we get rid of all our issues and everything works perfectly.
+
+33
+00:02:17,070 --> 00:02:22,070
+The next feature that I really like is having more space to develop.
+
+34
+00:02:23,370 --> 00:02:25,140
+What do I mean by this? Well,
+
+35
+00:02:25,200 --> 00:02:29,940
+very often we actually tend to have more than one code file, right?
+
+36
+00:02:30,210 --> 00:02:30,840
+For example,
+
+37
+00:02:30,840 --> 00:02:35,840
+let's say that we moved our contacts into this data file and we imported it
+
+38
+00:02:37,200 --> 00:02:38,033
+instead.
+
+39
+00:02:38,460 --> 00:02:42,870
+So it will say from data import contacts.
+
+40
+00:02:43,590 --> 00:02:48,590
+And now when I want to code things up and I want to get hold of certain things,
+
+41
+00:02:49,350 --> 00:02:51,840
+for example I want to get Jenny's email,
+
+42
+00:02:53,190 --> 00:02:57,300
+then ideally I would want to see this side by side,
+
+43
+00:02:57,300 --> 00:02:59,500
+right? In PyCharm
+
+44
+00:02:59,710 --> 00:03:03,190
+all you have to do to split the screen is just right
+
+45
+00:03:03,190 --> 00:03:06,640
+click on the file and then say split and move right.
+
+46
+00:03:07,390 --> 00:03:10,990
+And now all of a sudden you can see both sides at once.
+
+47
+00:03:11,230 --> 00:03:16,120
+This means it so much easier to refer to some other piece of code when you're
+
+48
+00:03:16,120 --> 00:03:16,953
+developing.
+
+49
+00:03:17,020 --> 00:03:22,020
+So here I can now easily see that the key for Jenny has a capital J,
+
+50
+00:03:22,540 --> 00:03:24,430
+so I have to tap into my contacts,
+
+51
+00:03:24,730 --> 00:03:28,600
+tap into the key Jenny and then get hold of her email.
+
+52
+00:03:29,020 --> 00:03:34,020
+This split-screen comes in really handy as your code gets more complex and
+
+53
+00:03:34,330 --> 00:03:35,890
+there's more and more files.
+
+54
+00:03:37,240 --> 00:03:42,240
+And now another advanced feature of an IDE compared to a simple text editor like
+
+55
+00:03:43,300 --> 00:03:46,630
+Repl.it is a built-in linter.
+
+56
+00:03:47,020 --> 00:03:52,020
+So what is a linter? Well, a linter in real life, is something that picks off a
+
+57
+00:03:52,510 --> 00:03:53,470
+little bits of dust,
+
+58
+00:03:53,470 --> 00:03:58,470
+bits of lint from your clothing, and in Programming it's something that picks out
+
+59
+00:04:00,370 --> 00:04:05,370
+bits of code that you've written that might not be in accordance to the style
+
+60
+00:04:05,770 --> 00:04:10,540
+guide. When we're writing code and we're trying to decide, well,
+
+61
+00:04:10,570 --> 00:04:15,430
+how many spaces do I leave between things, do I use tabs or spaces,
+
+62
+00:04:15,790 --> 00:04:17,680
+what is the maximum line length,
+
+63
+00:04:18,010 --> 00:04:22,720
+all of these sort of things that maybe won't break your program per se,
+
+64
+00:04:23,140 --> 00:04:27,550
+but it will mean that your program might look different from somebody else's
+
+65
+00:04:27,880 --> 00:04:31,630
+and you just want to know what is the convention so that you can keep your code
+
+66
+00:04:31,630 --> 00:04:34,480
+consistent with other Python developers. Well,
+
+67
+00:04:34,480 --> 00:04:36,760
+this is what a style guide is for.
+
+68
+00:04:37,030 --> 00:04:41,650
+And the style guide that most Python developers will abide by is something
+
+69
+00:04:41,650 --> 00:04:43,000
+called PEP 8.
+
+70
+00:04:43,600 --> 00:04:47,560
+And we've already seen this when we were talking about tabs versus spaces.
+
+71
+00:04:47,860 --> 00:04:48,460
+For example,
+
+72
+00:04:48,460 --> 00:04:53,460
+the guidance is that an indentation should have four spaces, and indeed it should
+
+73
+00:04:55,360 --> 00:04:57,970
+be spaces over tabs.
+
+74
+00:04:58,540 --> 00:05:02,020
+And then there are other things like what's the maximum line length
+
+75
+00:05:02,050 --> 00:05:04,630
+so that your lines of code don't become really,
+
+76
+00:05:04,630 --> 00:05:09,630
+really long and difficult to read, or things like how many blank lines should
+
+77
+00:05:09,970 --> 00:05:14,970
+there between functions and variables in your code and all sorts of things.
+
+78
+00:05:15,340 --> 00:05:20,340
+This is a very long document and it's actually very difficult to read all of it
+
+79
+00:05:21,160 --> 00:05:24,040
+and remember all of it while you're in the middle of coding.
+
+80
+00:05:24,550 --> 00:05:28,030
+But luckily for us, if we're using PyCharm,
+
+81
+00:05:28,300 --> 00:05:33,070
+it automatically applies those rules and guidance to our code
+
+82
+00:05:33,430 --> 00:05:36,130
+and lints our code. For example,
+
+83
+00:05:36,130 --> 00:05:39,250
+if I was to create a function called my_function,
+
+84
+00:05:40,030 --> 00:05:41,290
+and inside here
+
+85
+00:05:41,320 --> 00:05:45,280
+I've just got two inputs, n1 and n2,
+
+86
+00:05:45,820 --> 00:05:50,560
+and then it calculates the total by adding n1 to n2,
+
+87
+00:05:51,220 --> 00:05:55,210
+and it returns the total as an output. Now,
+
+88
+00:05:55,420 --> 00:05:59,870
+at a later point, I decide to call my function, passing in some numbers,
+
+89
+00:05:59,900 --> 00:06:03,470
+maybe say 4 and 5. Now firstly,
+
+90
+00:06:03,500 --> 00:06:08,500
+notice how I've got some light yellow squiggly lines under both of these lines.
+
+91
+00:06:09,200 --> 00:06:12,320
+And when I hover over it, so I don't have to click on it.
+
+92
+00:06:12,350 --> 00:06:16,400
+I just keep my cursor on top of the line which has the squiggles,
+
+93
+00:06:16,820 --> 00:06:17,390
+you can see
+
+94
+00:06:17,390 --> 00:06:22,390
+it tells me that PEP 8 guidance specifies that there should be two blank lines
+
+95
+00:06:23,210 --> 00:06:25,550
+after a class or function definition,
+
+96
+00:06:25,970 --> 00:06:28,370
+but instead it only found one.
+
+97
+00:06:28,880 --> 00:06:32,510
+So basically what it's trying to say is that the style guide says that there
+
+98
+00:06:32,510 --> 00:06:37,510
+should be two lines after and before each of your functions so that everything
+
+99
+00:06:38,450 --> 00:06:43,430
+is more spaced out and easier to read. And here, when I hover over it,
+
+100
+00:06:43,760 --> 00:06:47,150
+you can see it says there's missing white space after the comma.
+
+101
+00:06:47,570 --> 00:06:50,960
+So the style guide says that every time you use a comma in your code,
+
+102
+00:06:51,290 --> 00:06:54,920
+you should always have a space. This way again
+
+103
+00:06:54,920 --> 00:06:59,000
+it's easier to read and it keeps your code consistent with other Python
+
+104
+00:06:59,000 --> 00:07:01,460
+developers so that when people look at your code,
+
+105
+00:07:01,610 --> 00:07:04,700
+they can see that you're following the standard conventions.
+
+106
+00:07:05,210 --> 00:07:09,260
+But remember that this does not affect how your code runs.
+
+107
+00:07:09,650 --> 00:07:13,610
+Even with all of these suggestions and these style guide rule breaks,
+
+108
+00:07:13,940 --> 00:07:17,420
+it doesn't actually mean my code won't work. If I run it,
+
+109
+00:07:17,540 --> 00:07:21,350
+you can see that it works perfectly without any errors.
+
+110
+00:07:21,770 --> 00:07:26,770
+And it's only a matter of keeping your code tidy and keeping it in line with the
+
+111
+00:07:27,260 --> 00:07:30,890
+conventions that Python developers have set out. Now,
+
+112
+00:07:30,920 --> 00:07:35,920
+another advanced feature of an IDE compared to a text editor is the ability to
+
+113
+00:07:36,650 --> 00:07:38,270
+view your local history.
+
+114
+00:07:39,080 --> 00:07:42,980
+What that means is I can go to show history
+
+115
+00:07:43,550 --> 00:07:47,030
+and just as if you were in a browser, you can see your browsing history,
+
+116
+00:07:47,360 --> 00:07:50,450
+well here you can see all of your coding history.
+
+117
+00:07:50,810 --> 00:07:55,640
+So you can scroll back all the way in the last 12 hours and see the edits that
+
+118
+00:07:55,640 --> 00:08:00,230
+you've made. For example, at thirteen past four today,
+
+119
+00:08:00,650 --> 00:08:05,030
+I created this brand new function. So this is the current file
+
+120
+00:08:05,090 --> 00:08:08,150
+and this is what it looked like at that moment in time.
+
+121
+00:08:08,810 --> 00:08:11,390
+Now scrolling forward into the future,
+
+122
+00:08:11,600 --> 00:08:16,600
+the next thing I did was I added a new function call here and I added some space
+
+123
+00:08:17,540 --> 00:08:18,373
+here.
+
+124
+00:08:18,500 --> 00:08:23,000
+So if you've had some sort of catastrophic events and you realize that you've
+
+125
+00:08:23,000 --> 00:08:25,070
+really messed up, you've deleted everything,
+
+126
+00:08:25,370 --> 00:08:29,810
+you can always scroll back to previous time points and simply just copy and
+
+127
+00:08:29,810 --> 00:08:30,643
+paste the code.
+
+128
+00:08:30,920 --> 00:08:35,060
+Or you can revert back to that particular time point.
+
+129
+00:08:35,690 --> 00:08:40,340
+Can you imagine if you are writing your essay and the number of times I have
+
+130
+00:08:40,340 --> 00:08:43,310
+lost my essay because my computer is crashed.
+
+131
+00:08:43,760 --> 00:08:48,500
+Imagine if you had this ability to just scroll back in time and find one
+
+132
+00:08:48,500 --> 00:08:52,910
+snapshot that you liked and then revert everything back to that moment in time,
+
+133
+00:08:53,450 --> 00:08:55,830
+how powerful could that be? Well,
+
+134
+00:08:55,860 --> 00:08:59,820
+you now have that in your hands with local history in PyCharm.
+
+135
+00:09:00,480 --> 00:09:05,130
+Now another really handy feature is the ability to view the structure of your
+
+136
+00:09:05,130 --> 00:09:08,610
+code. Instead of going to the project navigation,
+
+137
+00:09:08,640 --> 00:09:11,130
+if I click on this structure pane here
+
+138
+00:09:11,580 --> 00:09:16,580
+you can see that it breaks down my code into all of the variables and all of the
+
+139
+00:09:16,860 --> 00:09:21,180
+functions. That means that my function could be declared, you know,
+
+140
+00:09:21,210 --> 00:09:24,270
+many hundreds of lines somewhere else,
+
+141
+00:09:24,630 --> 00:09:28,080
+and I'm scrolling around and I'm trying to find it.
+
+142
+00:09:28,410 --> 00:09:32,490
+All I have to do is look at well, here's my function,
+
+143
+00:09:32,730 --> 00:09:33,690
+and if I click on it
+
+144
+00:09:33,930 --> 00:09:37,860
+it takes me straight there and I can now edit it if I wish.
+
+145
+00:09:38,130 --> 00:09:41,040
+And if I needed the variable jenny_email, well
+
+146
+00:09:41,040 --> 00:09:42,630
+it takes me straight there as well.
+
+147
+00:09:42,750 --> 00:09:46,650
+Once you start having lots and lots of variables and lots of lots of functions,
+
+148
+00:09:47,010 --> 00:09:48,570
+this is a lifesaver.
+
+149
+00:09:49,320 --> 00:09:53,280
+Now there's a lot of other features that I'm going to show you that PyCharm
+
+150
+00:09:53,290 --> 00:09:56,250
+can do, but I want to do it gradually. For now
+
+151
+00:09:56,310 --> 00:09:58,380
+here's the last tip on PyCharm.
+
+152
+00:09:58,980 --> 00:10:03,980
+Whenever you create a variable or a function name and you end up using it in
+
+153
+00:10:04,740 --> 00:10:06,900
+lots of places, so for example
+
+154
+00:10:06,900 --> 00:10:11,340
+you might call my_function here and then you might call my_function again
+
+155
+00:10:11,340 --> 00:10:15,270
+passing in some different parameters at some later point in time.
+
+156
+00:10:15,810 --> 00:10:17,700
+And then you decide that actually,
+
+157
+00:10:18,120 --> 00:10:21,000
+I really don't like the way that I've named that function.
+
+158
+00:10:21,420 --> 00:10:26,420
+It would make so much more sense if it was called add instead because it returns
+
+159
+00:10:26,970 --> 00:10:31,500
+the total right? If I was to do this manually in a code editor,
+
+160
+00:10:31,500 --> 00:10:32,880
+I would have to go add,
+
+161
+00:10:33,150 --> 00:10:37,530
+and then all of these lines will break and I have to find all of them and then
+
+162
+00:10:37,530 --> 00:10:40,050
+change them manually. And that's very painful.
+
+163
+00:10:40,590 --> 00:10:43,890
+So instead, what you can do in PyCharm is you can
+
+164
+00:10:43,980 --> 00:10:48,980
+right-click on the name of your function or your variable, go to refactor -> rename.
+
+165
+00:10:50,790 --> 00:10:55,590
+And now it will find all of the places where this function is created,
+
+166
+00:10:55,620 --> 00:10:59,100
+where it's called, and you can now change it everywhere.
+
+167
+00:10:59,490 --> 00:11:01,080
+So click refactor,
+
+168
+00:11:01,560 --> 00:11:06,560
+and it's now found the function that needs to be renamed and also all the places
+
+169
+00:11:07,440 --> 00:11:10,770
+where it's used. So it's used in two places, here
+
+170
+00:11:10,770 --> 00:11:13,140
+on line 11 and here on line 14.
+
+171
+00:11:13,560 --> 00:11:18,560
+So now I click do refactor and what'll happen is it'll change all the places where
+
+172
+00:11:20,250 --> 00:11:22,590
+it occurs. And it's much,
+
+173
+00:11:22,590 --> 00:11:26,160
+much safer than say just using find and replace.
+
+174
+00:11:26,520 --> 00:11:30,420
+Let's say that I had a print statement here that said, um,
+
+175
+00:11:30,450 --> 00:11:33,090
+my_function is a function.
+
+176
+00:11:33,990 --> 00:11:37,110
+And if I used find and replace where I just say, well,
+
+177
+00:11:37,110 --> 00:11:42,110
+my_function now equals add and I click on replace all,
+
+178
+00:11:42,420 --> 00:11:47,160
+it's going to now change it in all the places. But on the other hand,
+
+179
+00:11:47,160 --> 00:11:49,020
+if I use refactor -> rename,
+
+180
+00:11:49,590 --> 00:11:54,590
+then it's going to be intelligent enough to know that this print statement is
+
+181
+00:11:55,000 --> 00:11:55,470
+just
+
+182
+00:11:55,470 --> 00:11:57,630
+text whereas the places 
+
+183
+00:11:57,630 --> 00:12:02,630
+where my function is used and the places where my function is declared,
+
+184
+00:12:02,880 --> 00:12:05,640
+that is what I want to refactor and rename.
+
+185
+00:12:05,820 --> 00:12:09,090
+And it leaves all of the innocent bystanders alone.
+
+186
+00:12:10,080 --> 00:12:15,080
+There's a lot of really exciting things yet to come as we start getting used to
+
+187
+00:12:15,120 --> 00:12:18,540
+using PyCharm. But as with any new tool,
+
+188
+00:12:18,840 --> 00:12:22,530
+you'll spend a little bit of time getting up and running with it and getting
+
+189
+00:12:22,530 --> 00:12:26,190
+used to using it. Now, when I was in primary school,
+
+190
+00:12:26,520 --> 00:12:31,520
+I still remember the moment when I got to graduate from writing with pencils
+
+191
+00:12:32,220 --> 00:12:35,640
+to writing with a Berol handwriting pen.
+
+192
+00:12:36,150 --> 00:12:41,150
+And it was a really significant moment in my life when I was allowed to write
+
+193
+00:12:41,250 --> 00:12:46,230
+with the adult tools. So this is kind of what's happening right here.
+
+194
+00:12:46,560 --> 00:12:48,270
+We're graduating to PyCharm.
+
+195
+00:12:48,510 --> 00:12:52,320
+It's going to take a little bit of getting used to and learning our ropes,
+
+196
+00:12:52,620 --> 00:12:55,170
+but it's going to take us closer to our goals.
+
+197
+00:12:55,710 --> 00:13:00,300
+Hopefully by now, PyCharm should have now downloaded and you're ready to head
+
+198
+00:13:00,300 --> 00:13:03,450
+over to the next lesson where we're going to install it.
+

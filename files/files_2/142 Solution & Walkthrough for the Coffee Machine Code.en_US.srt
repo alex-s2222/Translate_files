@@ -1,0 +1,1764 @@
+1
+00:00:00,150 --> 00:00:00,540
+Now,
+
+2
+00:00:00,540 --> 00:00:05,540
+there are so many possible solutions to create this coffee machine program
+
+3
+00:00:05,760 --> 00:00:10,760
+satisfying all the requirements. And the way that you code it up is essentially
+
+4
+00:00:12,000 --> 00:00:13,080
+your choice, right?
+
+5
+00:00:13,440 --> 00:00:17,970
+Whether if you decide to use a while loop or use a for loop or create a
+
+6
+00:00:17,970 --> 00:00:21,540
+different data structure, there are endless possibilities.
+
+7
+00:00:21,840 --> 00:00:25,320
+What I'm going to show you now is just one of those possibilities.
+
+8
+00:00:25,890 --> 00:00:29,790
+And what's really important is you don't feel like you've done it wrong
+
+9
+00:00:29,790 --> 00:00:33,120
+just because it's different to mine. As long as it works
+
+10
+00:00:33,120 --> 00:00:36,900
+the way that you expect it to, then consider yourself successful.
+
+11
+00:00:37,650 --> 00:00:41,520
+The first thing I'm going to do is create a new project in PyCharm,
+
+12
+00:00:41,910 --> 00:00:46,740
+and I'm going to call my project coffee machine. Again,
+
+13
+00:00:46,770 --> 00:00:51,570
+making sure that I've got the latest version of Python as the interpreter I'll
+
+14
+00:00:51,570 --> 00:00:52,403
+click
+
+15
+00:00:52,490 --> 00:00:53,323
+create.
+
+16
+00:00:54,860 --> 00:00:58,700
+Now that the first thing I'm going to do here is right-click on this and create
+
+17
+00:00:58,730 --> 00:01:02,210
+a new file, which is going to be my main.py.
+
+18
+00:01:02,810 --> 00:01:07,160
+And then I'm going to go to my starting project in Repl.it and I'm just going to
+
+19
+00:01:07,160 --> 00:01:12,160
+copy everything there is over here and paste it into this main.py.
+
+20
+00:01:13,370 --> 00:01:18,370
+Now you might find the font of your code or of PyCharm a little bit too big or
+
+21
+00:01:19,190 --> 00:01:21,350
+too small. If that's the case,
+
+22
+00:01:21,350 --> 00:01:26,350
+you can just go into preferences and change the appearance and the font to a
+
+23
+00:01:27,830 --> 00:01:30,680
+different size. And this is for the user interface.
+
+24
+00:01:31,130 --> 00:01:35,210
+And if you want to change the font of the editor, then you can go here,
+
+25
+00:01:35,270 --> 00:01:38,120
+go to font and then change that size here.
+
+26
+00:01:38,600 --> 00:01:41,810
+I've tried to make it as large as possible so that when you were looking at this
+
+27
+00:01:41,810 --> 00:01:46,100
+video on an iPad or an iPhone, all the code still be readable.
+
+28
+00:01:46,460 --> 00:01:48,230
+But of course, normally when you're coding,
+
+29
+00:01:48,230 --> 00:01:52,250
+you'd probably want to fit more lines into the same screen,
+
+30
+00:01:52,730 --> 00:01:56,300
+but it's not good to strain your eyes. So try to strike a balance there.
+
+31
+00:01:57,110 --> 00:02:00,800
+Now I'm going to collapse that sidebar because I'm going to be coding entirely
+
+32
+00:02:00,800 --> 00:02:01,880
+in this one file.
+
+33
+00:02:02,510 --> 00:02:06,080
+Now notice that the beginning we get given a menu,
+
+34
+00:02:07,070 --> 00:02:11,210
+and this is a dictionary which contains three entries.
+
+35
+00:02:11,690 --> 00:02:15,050
+And each of those entries have a name of a drink,
+
+36
+00:02:15,140 --> 00:02:16,820
+espresso, latte and cappuccino.
+
+37
+00:02:17,210 --> 00:02:21,140
+And then each of them have a value that holds a bunch of data,
+
+38
+00:02:21,500 --> 00:02:24,650
+including the ingredients that are required to make that drink
+
+39
+00:02:24,980 --> 00:02:29,840
+and also the price of the drink. Now there's also a resources dictionary,
+
+40
+00:02:29,870 --> 00:02:32,900
+which holds the resources of the coffee machine.
+
+41
+00:02:33,740 --> 00:02:36,440
+Now that we've got all of that, then we're ready to go.
+
+42
+00:02:37,070 --> 00:02:39,740
+I'm going to tackle these requirements one by one.
+
+43
+00:02:40,370 --> 00:02:43,670
+And the first one says to prompt the user by asking,
+
+44
+00:02:43,700 --> 00:02:46,880
+what would you like? Espresso, latte or cappuccino.
+
+45
+00:02:46,880 --> 00:02:51,880
+So I'm actually gonna just straight up copy this line and put that into an
+
+46
+00:02:51,950 --> 00:02:55,730
+input. This is going to be saved into some sort of variable,
+
+47
+00:02:55,730 --> 00:02:57,140
+which I'll name choice.
+
+48
+00:02:58,550 --> 00:03:03,010
+Now it tells me that the prompt should show every time action has completed.
+
+49
+00:03:03,280 --> 00:03:03,820
+For example,
+
+50
+00:03:03,820 --> 00:03:07,660
+once the drink is dispensed and it should show again and again and again.
+
+51
+00:03:07,930 --> 00:03:11,970
+So that means we probably going to have to embed this input in some sort of while
+
+52
+00:03:11,970 --> 00:03:16,270
+loop. So I'm just gonna say for now while something is true,
+
+53
+00:03:16,570 --> 00:03:20,110
+then keep asking for this prompt. Right now
+
+54
+00:03:20,140 --> 00:03:25,140
+if we decide to go and run this code where we go to run and then click on this
+
+55
+00:03:25,540 --> 00:03:29,140
+button and then select the main.py to run,
+
+56
+00:03:29,800 --> 00:03:33,790
+then you can see that it asks me what would you like? And if I've put an input,
+
+57
+00:03:33,880 --> 00:03:36,910
+it'll keep asking me until eternity, basically,
+
+58
+00:03:36,910 --> 00:03:40,870
+because that there's currently no way of turning that true into a false.
+
+59
+00:03:41,740 --> 00:03:43,720
+So let's take a look at the next requirement.
+
+60
+00:03:43,900 --> 00:03:48,010
+We should be able to turn off the coffee machine by entering off into the prompt.
+
+61
+00:03:48,610 --> 00:03:50,290
+For maintainers of the coffee machine,
+
+62
+00:03:50,290 --> 00:03:54,160
+they can use off as the secret word to turn off the machine and your code should
+
+63
+00:03:54,160 --> 00:03:58,450
+end execution when this happens. So when somebody wants to buy coffee,
+
+64
+00:03:58,480 --> 00:04:03,160
+this is the line that they see. But when a maintenance guy comes along,
+
+65
+00:04:03,160 --> 00:04:05,140
+then they should be able to enter something.
+
+66
+00:04:05,500 --> 00:04:08,290
+And if this choice happens to equal the secret code,
+
+67
+00:04:08,590 --> 00:04:13,090
+which is off, then in this case we should stop the while loop and exit.
+
+68
+00:04:13,510 --> 00:04:18,510
+So that gives us a way of changing this true into some other form of variable,
+
+69
+00:04:18,870 --> 00:04:22,320
+right? So we could create a new variable code is_on,
+
+70
+00:04:22,650 --> 00:04:27,180
+start it off as true and while the machine is on,
+
+71
+00:04:27,510 --> 00:04:31,530
+then it should continue to loop through and ask the user for their choice.
+
+72
+00:04:31,890 --> 00:04:35,280
+But if the choice happens to be off, then we're going to turn
+
+73
+00:04:35,280 --> 00:04:39,060
+that is_on into false. Now,
+
+74
+00:04:39,060 --> 00:04:40,650
+if we run our code again,
+
+75
+00:04:40,650 --> 00:04:44,790
+so now that you've run it once you can either stop it or you can rerun it,
+
+76
+00:04:45,390 --> 00:04:49,770
+and now it's going to stop your existing code and rerun the code.
+
+77
+00:04:50,040 --> 00:04:52,140
+So if you don't want to see this dialogue every time,
+
+78
+00:04:52,170 --> 00:04:55,230
+then just check this box and then click stop and rerun.
+
+79
+00:04:55,950 --> 00:05:00,950
+So now if we make a selection or we say something basically anything other than
+
+80
+00:05:01,380 --> 00:05:02,970
+the key word, which is off,
+
+81
+00:05:03,240 --> 00:05:06,810
+it's going to loop back and forth and keep prompting us.
+
+82
+00:05:07,170 --> 00:05:12,170
+But if I say off, then the machine turns off and you can see that I've now exited
+
+83
+00:05:12,870 --> 00:05:16,920
+the program. Now we've tackled 1 and 2.  
+
+84
+00:05:16,950 --> 00:05:21,930
+Let's go on to number 3. When the user enters the keyword report to
+
+85
+00:05:21,930 --> 00:05:24,600
+the prompt, another secret word, a report
+
+86
+00:05:24,630 --> 00:05:28,410
+should be generated that shows the current resource values. For example,
+
+87
+00:05:28,410 --> 00:05:33,150
+water, milk, coffee, and money. So how can we do that? Well, firstly,
+
+88
+00:05:33,180 --> 00:05:36,360
+we don't actually have a variable that holds the amount of money.
+
+89
+00:05:36,690 --> 00:05:37,950
+So let's create something,
+
+90
+00:05:37,950 --> 00:05:41,940
+let's call it profit maybe and set it to equal zero to begin with.
+
+91
+00:05:42,240 --> 00:05:44,790
+Our machine has an empty money box in the beginning.
+
+92
+00:05:45,390 --> 00:05:48,720
+So now we have to check to see, well, elif
+
+93
+00:05:48,750 --> 00:05:52,590
+the choice was equal to report. Well, in this case,
+
+94
+00:05:52,620 --> 00:05:57,620
+we have to generate a report and the report is basically going to print all the
+
+95
+00:05:58,820 --> 00:06:00,500
+values of these resources.
+
+96
+00:06:01,010 --> 00:06:06,010
+So I'm simply going to copy the expected output and I'm going to paste it here.
+
+97
+00:06:07,550 --> 00:06:12,080
+And then we can try and turn that into print statements,
+
+98
+00:06:12,170 --> 00:06:16,220
+making it a dynamic instead of hard-coded. In my case,
+
+99
+00:06:16,220 --> 00:06:19,670
+I want to add print in front of all of these lines.
+
+100
+00:06:19,790 --> 00:06:23,990
+And previously we've been doing this just by writing it one by one,
+
+101
+00:06:23,990 --> 00:06:25,970
+and then maybe we could copy and paste it.
+
+102
+00:06:26,330 --> 00:06:30,890
+But let me show you a quick tip that you can do in PyCharm. If you're on Windows,
+
+103
+00:06:30,920 --> 00:06:35,510
+hold down the alt and the shift key on your keyboard. If you are on a Mac,
+
+104
+00:06:35,540 --> 00:06:37,790
+hold down the option and the shift key.
+
+105
+00:06:38,300 --> 00:06:42,710
+Now click at the beginning and hold and drag down.
+
+106
+00:06:43,580 --> 00:06:45,470
+So if that doesn't work, try out a few times,
+
+107
+00:06:45,470 --> 00:06:49,400
+you'll get the hang of it eventually. But notice how I've now got four cursors
+
+108
+00:06:49,520 --> 00:06:52,580
+and that means when I write print, check this out.
+
+109
+00:06:53,870 --> 00:06:54,703
+Isn't that cool?
+
+110
+00:06:55,550 --> 00:06:59,780
+I've managed to write on four lines at once because I need that repeat
+
+111
+00:06:59,780 --> 00:07:03,980
+functionality and this is a way of doing multiline editing.
+
+112
+00:07:04,190 --> 00:07:07,910
+Remember that shortcut and use it in the future if you find it useful.
+
+113
+00:07:08,480 --> 00:07:13,430
+So I'm actually going to change this all into fstrings because I want to change
+
+114
+00:07:13,460 --> 00:07:16,160
+these numbers instead of being hard-coded,
+
+115
+00:07:16,490 --> 00:07:19,700
+I want to insert them into here using the curly braces.
+
+116
+00:07:20,210 --> 00:07:23,120
+The water is stored under resources,
+
+117
+00:07:23,510 --> 00:07:26,270
+and then it's in the key called water.
+
+118
+00:07:27,830 --> 00:07:31,670
+And now notice how I've got a outer double quote,
+
+119
+00:07:31,910 --> 00:07:33,770
+so I can't have an inner double quote.
+
+120
+00:07:33,770 --> 00:07:37,100
+So I'm going to change this into single quotes instead,
+
+121
+00:07:38,960 --> 00:07:42,530
+like, so. And I'm going to do the same for milk and coffee.
+
+122
+00:07:44,420 --> 00:07:48,590
+So now I've added the water, milk, and coffee into my print statement.
+
+123
+00:07:48,620 --> 00:07:50,990
+All I have left is the money.
+
+124
+00:07:51,230 --> 00:07:56,230
+So let's delete the value and let's insert that profit into here.
+
+125
+00:07:57,020 --> 00:08:00,170
+Now let's run our code again and let's check it out.
+
+126
+00:08:00,650 --> 00:08:05,650
+If I type report it should now give me a report of all the current values and
+
+127
+00:08:06,140 --> 00:08:10,130
+money is equal to $0 because that's what we start off with.
+
+128
+00:08:11,120 --> 00:08:14,540
+We're now ready to tackle number 4. Here
+
+129
+00:08:14,570 --> 00:08:19,370
+we have to check that when the user chooses a drink, we're going to check
+
+130
+00:08:19,370 --> 00:08:23,360
+if there are enough resources to make that particular drink they chose.
+
+131
+00:08:23,690 --> 00:08:26,630
+For example, if a latte requires 200 ml of water
+
+132
+00:08:26,930 --> 00:08:29,390
+but there's only 100ml left in the machine,
+
+133
+00:08:29,750 --> 00:08:32,960
+it should not make the drink because it actually can't make the drink
+
+134
+00:08:33,290 --> 00:08:37,390
+and it's going to print out, 'Sorry, there's not enough water' or not enough milk,
+
+135
+00:08:37,440 --> 00:08:39,320
+not enough coffee, whatever it may be.
+
+136
+00:08:39,770 --> 00:08:42,350
+So let's tackle this particular checkpoint.
+
+137
+00:08:43,910 --> 00:08:48,650
+Now that I've got the if choices equal off, if choice equals report.
+
+138
+00:08:48,980 --> 00:08:50,990
+Now, if it's not either of those,
+
+139
+00:08:51,020 --> 00:08:54,080
+then they're probably going to be entering the name of a drink.
+
+140
+00:08:54,380 --> 00:08:56,820
+So let's catch that using an else statement.
+
+141
+00:08:57,480 --> 00:08:59,430
+And then inside this else statement
+
+142
+00:08:59,430 --> 00:09:04,350
+I'm going to get hold of the particular drink that they ordered by tapping into
+
+143
+00:09:04,350 --> 00:09:09,120
+our menu dictionary and then using that choice they typed in as the key.
+
+144
+00:09:09,630 --> 00:09:14,190
+Let's say that the particular drink that they chose is equal to menu
+
+145
+00:09:14,610 --> 00:09:18,480
+and then the key is of course going to be the choice.
+
+146
+00:09:18,930 --> 00:09:23,930
+So now if I just print this drink and I run my code..
+
+147
+00:09:24,270 --> 00:09:29,270
+So the shortcut for running is actually holding down the control and R and now
+
+148
+00:09:29,730 --> 00:09:34,200
+it can go down here and you can see it's asking me for what I would like,
+
+149
+00:09:34,230 --> 00:09:38,010
+so I'm going to choose latte. And what's going to be printed
+
+150
+00:09:38,040 --> 00:09:43,040
+is the latte entry in my recipes dictionary up here, so this particular
+
+151
+00:09:44,010 --> 00:09:44,843
+value.
+
+152
+00:09:46,050 --> 00:09:50,070
+Now that I've got this value stored inside a variable called drink,
+
+153
+00:09:50,340 --> 00:09:55,340
+well then I can tap into its ingredients and loop through each of the ingredients
+
+154
+00:09:56,160 --> 00:10:00,600
+comparing it against the resources and seeing if there's enough.
+
+155
+00:10:00,990 --> 00:10:04,680
+Now this is a little bit of functionality that should probably be self-
+
+156
+00:10:04,680 --> 00:10:07,950
+contained. So instead of just printing the drink,
+
+157
+00:10:07,950 --> 00:10:11,520
+I'm actually going to create a new function. So up here,
+
+158
+00:10:11,520 --> 00:10:15,930
+I'm going to create a new function with our def and I'm going to call it is_
+
+159
+00:10:15,960 --> 00:10:17,940
+resource_sufficient.
+
+160
+00:10:20,370 --> 00:10:25,370
+And this is_resource_efficient is going to take the order ingredients as a
+
+161
+00:10:27,180 --> 00:10:29,910
+input and then it's going to work on that.
+
+162
+00:10:29,910 --> 00:10:34,860
+So if we want to call that function and pass in the order ingredients we'll have
+
+163
+00:10:34,860 --> 00:10:36,930
+to call is_resource_efficient
+
+164
+00:10:37,410 --> 00:10:42,410
+and then the other ingredients will be from the drink and then getting hold of
+
+165
+00:10:43,350 --> 00:10:46,470
+the values under the key ingredients.
+
+166
+00:10:48,860 --> 00:10:49,580
+All right.
+
+167
+00:10:49,580 --> 00:10:54,350
+So under this particular key, it will fetch this particular dictionary.
+
+168
+00:10:54,710 --> 00:10:58,880
+And this is the dictionary that's going to be passed over to this function as
+
+169
+00:10:58,880 --> 00:10:59,713
+the input.
+
+170
+00:11:00,140 --> 00:11:04,130
+So now that we have a hold of a dictionary with all the ingredients that are
+
+171
+00:11:04,130 --> 00:11:06,950
+required and the amount of each ingredient,
+
+172
+00:11:07,250 --> 00:11:09,950
+we can now compare it against our resources
+
+173
+00:11:09,980 --> 00:11:14,980
+which is a very similar dictionary with the resources and the amount that's left
+
+174
+00:11:15,800 --> 00:11:16,633
+in the machine.
+
+175
+00:11:17,750 --> 00:11:22,750
+We can loop through the order ingredients and for each of the items in the
+
+176
+00:11:23,720 --> 00:11:24,380
+ingredients,
+
+177
+00:11:24,380 --> 00:11:29,380
+we're going to check to see if the order ingredients at that particular key,
+
+178
+00:11:30,080 --> 00:11:35,080
+so this is getting hold of the value, is greater than or equal to the resources
+
+179
+00:11:37,700 --> 00:11:41,090
+using the same particular key. For example,
+
+180
+00:11:41,090 --> 00:11:43,580
+if we were looking at the first example,
+
+181
+00:11:43,940 --> 00:11:46,580
+the item would be equal to water.
+
+182
+00:11:47,090 --> 00:11:51,020
+So if we fetch the value from order ingredients
+
+183
+00:11:51,050 --> 00:11:54,010
+with the key of water, we should get of 200.
+
+184
+00:11:54,460 --> 00:11:59,460
+And we would now test to see if 200 is greater than or equal to the 300 that
+
+185
+00:12:02,110 --> 00:12:05,050
+we have under the resources. Well, in this case,
+
+186
+00:12:05,080 --> 00:12:09,370
+then we should probably tell the user that we actually can't make it.
+
+187
+00:12:09,370 --> 00:12:14,370
+So let's put an if statement there and I'm going to use this same string here to
+
+188
+00:12:15,880 --> 00:12:16,713
+print it out.
+
+189
+00:12:18,340 --> 00:12:22,000
+Now notice when I pasted that string in and
+
+190
+00:12:22,000 --> 00:12:27,000
+it has the double quotes from the PDF file here that it's actually not being
+
+191
+00:12:27,910 --> 00:12:29,740
+recognized and I'm getting an error here.
+
+192
+00:12:30,220 --> 00:12:33,820
+And the important thing to know is that there's a difference between decorative
+
+193
+00:12:33,820 --> 00:12:35,260
+double quotes, like these,
+
+194
+00:12:35,320 --> 00:12:38,680
+which looked different for the beginning quote and the end quote.
+
+195
+00:12:39,130 --> 00:12:43,060
+And then there are Programming double quotes which look like this,
+
+196
+00:12:43,060 --> 00:12:44,770
+so I'm going to select this whole line
+
+197
+00:12:45,070 --> 00:12:50,070
+and I'm going to add a double quote and notice how they look identical from the
+
+198
+00:12:50,260 --> 00:12:54,550
+front and the back. So now it's going to print, Sorry
+
+199
+00:12:54,550 --> 00:12:56,050
+there is not enough.
+
+200
+00:12:56,140 --> 00:12:59,560
+And the enough of what? It's going to be
+
+201
+00:12:59,590 --> 00:13:01,990
+the item that we're currently looping through.
+
+202
+00:13:02,500 --> 00:13:04,210
+So let's change that to an fstring
+
+203
+00:13:04,540 --> 00:13:08,080
+which makes that an active piece of code that's going to be inserted.
+
+204
+00:13:08,980 --> 00:13:09,880
+And in this case,
+
+205
+00:13:09,910 --> 00:13:14,530
+we're going to return false because there is not enough resources.
+
+206
+00:13:14,980 --> 00:13:16,210
+But otherwise,
+
+207
+00:13:16,450 --> 00:13:21,130
+if we managed to get to the end of the for loop and we still haven't returned or
+
+208
+00:13:21,130 --> 00:13:25,420
+exited the function by returning false, then in this case
+
+209
+00:13:25,450 --> 00:13:26,560
+we can return true.
+
+210
+00:13:26,980 --> 00:13:30,520
+So if this particular logic is a little bit confusing for you,
+
+211
+00:13:30,520 --> 00:13:35,080
+you could have something like, like this.
+
+212
+00:13:35,110 --> 00:13:39,730
+So you have is_enough = true, and you could change is_enough
+
+213
+00:13:41,380 --> 00:13:42,640
+to false.
+
+214
+00:13:42,910 --> 00:13:46,810
+If any of the order ingredients are greater than the resources.
+
+215
+00:13:47,380 --> 00:13:51,250
+And finally at the end, you could return is_enough.
+
+216
+00:13:51,460 --> 00:13:55,630
+So basically it stays true unless one of these if statements gets activated.
+
+217
+00:13:56,800 --> 00:14:01,540
+But for simplicity sake, I'm actually just going to keep it simple like this.
+
+218
+00:14:02,140 --> 00:14:04,720
+And we're now ready to receive that result here
+
+219
+00:14:05,140 --> 00:14:07,270
+so we can put an if statement here.
+
+220
+00:14:07,390 --> 00:14:10,630
+If the resources are sufficient for the drink,
+
+221
+00:14:11,080 --> 00:14:14,800
+then we can proceed to continue to the next step.
+
+222
+00:14:15,970 --> 00:14:18,580
+The next step is to process coins.
+
+223
+00:14:18,730 --> 00:14:21,820
+The user's going to be asked for the number of quarters
+
+224
+00:14:21,820 --> 00:14:24,070
+they have, the number of dimes, nickels, and pennies,
+
+225
+00:14:24,460 --> 00:14:26,950
+and you have to remember their values.
+
+226
+00:14:26,980 --> 00:14:31,000
+So if you're from the US this shouldn't be a problem. But if you're like me
+
+227
+00:14:31,030 --> 00:14:33,610
+somebody who's not from the US, um,
+
+228
+00:14:33,640 --> 00:14:36,940
+I actually find it really confusing when I go to the States.
+
+229
+00:14:37,450 --> 00:14:41,860
+I always think that the larger coin, that the nickel, should be worth more than
+
+230
+00:14:41,860 --> 00:14:44,200
+the dime, but I think it was just me being silly.
+
+231
+00:14:45,070 --> 00:14:49,570
+So we're going to ask the user to insert some coins, we're going to process it
+
+232
+00:14:49,630 --> 00:14:52,340
+and then we're going to calculate the total value of the coins
+
+233
+00:14:52,340 --> 00:14:54,590
+they inserted. That, to me,
+
+234
+00:14:54,590 --> 00:14:57,440
+sounds like it should be a separate function as well.
+
+235
+00:14:58,040 --> 00:15:02,120
+So let's create another function here, which I'm going to call process_coins.
+
+236
+00:15:04,130 --> 00:15:06,410
+And this is not going to take any input,
+
+237
+00:15:06,470 --> 00:15:10,610
+but it is going to return the total value of the coins inserted.
+
+238
+00:15:11,270 --> 00:15:13,310
+Now, how do we process coins? Well,
+
+239
+00:15:13,310 --> 00:15:18,310
+first we can print to ask them to please insert coins.
+
+240
+00:15:19,340 --> 00:15:23,780
+And then afterwards, we're going to somehow calculate a total, right?
+
+241
+00:15:23,810 --> 00:15:25,940
+This is the variable that we're going to keep track of
+
+242
+00:15:26,270 --> 00:15:29,150
+and we're going to return as the output of this function.
+
+243
+00:15:29,930 --> 00:15:34,160
+The total is going to be calculated based on the four types of coins.
+
+244
+00:15:34,670 --> 00:15:38,600
+So the first question we're going to ask them is how many quarters?
+
+245
+00:15:40,700 --> 00:15:43,670
+And this of course is going to be a whole number,
+
+246
+00:15:43,670 --> 00:15:46,910
+so we're going to turn it from a string into an integer.
+
+247
+00:15:47,570 --> 00:15:51,860
+And we know that each quarter is worth 0.25
+
+248
+00:15:51,860 --> 00:15:53,090
+of a dollar,
+
+249
+00:15:53,390 --> 00:15:57,470
+so we can multiply the number of quarters by 0.25
+
+250
+00:15:57,770 --> 00:15:59,720
+and then we'll get the monetary value.
+
+251
+00:16:01,190 --> 00:16:06,190
+Now we'll need to do the same thing for a bunch of other coins.
+
+252
+00:16:06,980 --> 00:16:09,860
+So instead of quarters, this is going to be dimes,
+
+253
+00:16:10,130 --> 00:16:14,690
+and then it's going to be nickels and finally,
+
+254
+00:16:14,690 --> 00:16:18,920
+it's going to be pennies. Dimes are worth 10 cents,
+
+255
+00:16:19,310 --> 00:16:21,380
+nickels are worth 5 cents,
+
+256
+00:16:22,010 --> 00:16:26,030
+and pennies are worth 1 cent. Now,
+
+257
+00:16:26,060 --> 00:16:30,950
+instead of just setting the totals of each of these values, every subsequent one
+
+258
+00:16:30,980 --> 00:16:32,240
+other than the first one
+
+259
+00:16:32,240 --> 00:16:35,810
+which remember creates this variable and sets its value,
+
+260
+00:16:36,230 --> 00:16:41,230
+every other one is just going to be added to the current value like this.
+
+261
+00:16:42,620 --> 00:16:44,840
+So now at the very end of all of this,
+
+262
+00:16:44,870 --> 00:16:48,260
+we're going to return the total as the output.
+
+263
+00:16:48,740 --> 00:16:52,850
+And whenever you have something that returns like both of these functions,
+
+264
+00:16:53,210 --> 00:16:56,960
+you should probably be adding a docstring. So in this case,
+
+265
+00:16:56,960 --> 00:16:58,280
+this returns
+
+266
+00:16:58,280 --> 00:17:02,870
+the total calculated from coins
+
+267
+00:17:02,870 --> 00:17:06,350
+inserted. And in this case,
+
+268
+00:17:06,380 --> 00:17:11,380
+what happens is it returns true when order can be made and false
+
+269
+00:17:15,500 --> 00:17:19,130
+if ingredients are insufficient.
+
+270
+00:17:20,990 --> 00:17:25,160
+Now let's call this function that we created, process_coins.
+
+271
+00:17:25,850 --> 00:17:28,310
+If there's enough resources to make the drink,
+
+272
+00:17:28,340 --> 00:17:31,520
+then the next step is to actually ask them for the money.
+
+273
+00:17:31,820 --> 00:17:34,820
+So here is where we're going to call process coins.
+
+274
+00:17:35,450 --> 00:17:40,400
+And notice when I write this and I hover over it, you can see that docstring
+
+275
+00:17:40,400 --> 00:17:43,700
+we just wrote, returns the total from coins inserted.
+
+276
+00:17:44,990 --> 00:17:47,180
+That means this is going to return
+
+277
+00:17:47,330 --> 00:17:52,110
+and we need to capture the user's payment in this variable.
+
+278
+00:17:52,110 --> 00:17:56,760
+So this returns the output replaces this function call,
+
+279
+00:17:57,060 --> 00:18:01,230
+and then it gets saved inside this variable called payment. Now,
+
+280
+00:18:01,230 --> 00:18:05,340
+what are we going to do with this payment? Well, that goes onto the next step,
+
+281
+00:18:05,790 --> 00:18:08,970
+which is to check that the transaction was successful.
+
+282
+00:18:09,270 --> 00:18:13,380
+So we have to make sure that the user has inserted enough money to actually
+
+283
+00:18:13,380 --> 00:18:18,060
+purchase the drink they wanted. But each drink of course has a different price.
+
+284
+00:18:18,330 --> 00:18:22,920
+So if the user inserts enough money, then we're going to give them some change.
+
+285
+00:18:23,250 --> 00:18:26,910
+But if they haven't inserted enough money, then we're going to say, sorry,
+
+286
+00:18:26,910 --> 00:18:29,460
+that's not enough money. And the money is refunded.
+
+287
+00:18:30,240 --> 00:18:33,990
+But if they have inserted enough money then the cost of the drink is going to be
+
+288
+00:18:33,990 --> 00:18:38,700
+added to the machine as the profit. So the next time when we trigger the report,
+
+289
+00:18:38,730 --> 00:18:42,570
+then we're going to get to see the increase in the monetary value.
+
+290
+00:18:44,010 --> 00:18:44,490
+Again,
+
+291
+00:18:44,490 --> 00:18:48,900
+let's create a new function and let's get rid of some of these squiggly lines by
+
+292
+00:18:48,900 --> 00:18:51,630
+adding enough spaces in between the functions.
+
+293
+00:18:52,530 --> 00:18:56,370
+This one I'm going to call is_transaction_successful,
+
+294
+00:18:58,290 --> 00:19:00,810
+because that's basically what we're going to be checking.
+
+295
+00:19:01,380 --> 00:19:03,990
+And it's going to take two inputs.
+
+296
+00:19:04,110 --> 00:19:08,520
+It's going to take a input in terms of the amount of money that was received,
+
+297
+00:19:09,180 --> 00:19:14,130
+and it's also going to have another input, which is cost of the drink.
+
+298
+00:19:15,060 --> 00:19:20,060
+This function's goal is to return true when the payment is accepted or it's
+
+299
+00:19:24,570 --> 00:19:25,980
+going to return false
+
+300
+00:19:26,370 --> 00:19:29,610
+if the money is insufficient.
+
+301
+00:19:29,630 --> 00:19:30,463
+Uhm
+
+302
+00:19:32,390 --> 00:19:36,410
+Notice how there's this line to the right here of your editor.
+
+303
+00:19:36,890 --> 00:19:41,890
+Basically what happens is if you have a line of code that's a little bit too
+
+304
+00:19:41,930 --> 00:19:45,320
+long past the recommendation from PEP 8,
+
+305
+00:19:45,650 --> 00:19:50,150
+you can see that PEP 8 recommends that a line should not be longer than 120
+
+306
+00:19:50,150 --> 00:19:50,983
+characters
+
+307
+00:19:51,140 --> 00:19:54,650
+because it's very hard to read for somebody scrolling around like this.
+
+308
+00:19:54,980 --> 00:19:55,880
+So in this case,
+
+309
+00:19:55,880 --> 00:20:00,020
+they would want you to put it onto a new line so that you don't have to scroll
+
+310
+00:20:00,020 --> 00:20:03,500
+and you can see it all on the same screen. But in our case,
+
+311
+00:20:03,500 --> 00:20:07,520
+this is not a problem because we have not exceeded the line length 
+
+312
+00:20:07,520 --> 00:20:08,353
+recommendation.
+
+313
+00:20:09,590 --> 00:20:13,790
+So how are you going to check if the transaction is successful?
+
+314
+00:20:14,420 --> 00:20:14,690
+Well,
+
+315
+00:20:14,690 --> 00:20:19,690
+if the money received is greater or equal to the cost of the drink, well in this case
+
+316
+00:20:21,770 --> 00:20:26,300
+that means we should return true, right? The transaction is successful.
+
+317
+00:20:26,990 --> 00:20:30,530
+And if it's not the case, if it's the opposite case,
+
+318
+00:20:30,860 --> 00:20:34,160
+then we're going to print, Sorry that's not enough money.
+
+319
+00:20:34,220 --> 00:20:36,380
+And the money is refunded to them.
+
+320
+00:20:36,620 --> 00:20:37,453
+Right.
+
+321
+00:20:39,590 --> 00:20:44,420
+So let's print that here. And we're also going to return false.
+
+322
+00:20:44,960 --> 00:20:48,340
+Remember that the return has to be the last thing in your function.
+
+323
+00:20:48,400 --> 00:20:52,420
+If you put this above the print statement then the print statement will never
+
+324
+00:20:52,420 --> 00:20:55,840
+get called, and that's why you have this highlight. And if you click on it,
+
+325
+00:20:55,840 --> 00:20:58,810
+you can see that it tells you this code is unreachable.
+
+326
+00:21:00,520 --> 00:21:04,780
+So there's a lot of these little hints and tips that really help you when you're
+
+327
+00:21:04,780 --> 00:21:05,613
+developing.
+
+328
+00:21:06,340 --> 00:21:10,990
+But if the user has inserted enough money then the cost of the drink should be
+
+329
+00:21:10,990 --> 00:21:15,310
+added to the machine as the profit so that we can see it in the next time report
+
+330
+00:21:15,310 --> 00:21:16,143
+is triggered.
+
+331
+00:21:16,420 --> 00:21:21,420
+So this means that if this money_received is greater or equal to the drink cost,
+
+332
+00:21:22,420 --> 00:21:27,420
+then we're going to add to this variable called profit that we have up here,
+
+333
+00:21:28,870 --> 00:21:30,340
+which starts out at zero,
+
+334
+00:21:30,580 --> 00:21:34,420
+but we're going to add the drinks cost to profit.
+
+335
+00:21:34,720 --> 00:21:37,600
+So we're going to say profit += drink_cost.
+
+336
+00:21:38,110 --> 00:21:41,740
+And now you'll see an error under the profit
+
+337
+00:21:42,070 --> 00:21:45,100
+because this is acting inside
+
+338
+00:21:45,130 --> 00:21:50,130
+a local scope and profit is outside in the global scope.
+
+339
+00:21:50,830 --> 00:21:54,550
+So in order to reach it, we have to say global profit.
+
+340
+00:21:56,260 --> 00:22:01,260
+And the final part of checking the transaction is seeing if the user has
+
+341
+00:22:01,420 --> 00:22:06,070
+inserted too much money then the machine is going to offer change. For example,
+
+342
+00:22:06,340 --> 00:22:11,080
+here is however many dollars in change and the change should be rounded to two
+
+343
+00:22:11,080 --> 00:22:15,760
+decimal places. Again, it's going to be inside this if statement.
+
+344
+00:22:16,420 --> 00:22:21,130
+So the change is going to be equal to the amount of money received,
+
+345
+00:22:21,430 --> 00:22:23,740
+subtracting the drink cost.
+
+346
+00:22:24,280 --> 00:22:27,430
+And this of course could be any number of decimal places.
+
+347
+00:22:28,060 --> 00:22:30,040
+So we can use the round function
+
+348
+00:22:30,040 --> 00:22:34,150
+which you've seen a long time ago to round this number
+
+349
+00:22:34,510 --> 00:22:38,230
+and the second input is the number of decimal places.
+
+350
+00:22:39,310 --> 00:22:43,270
+So if you just hover over the function name, then you can see the docs come up
+
+351
+00:22:43,720 --> 00:22:48,670
+and this function is basically going to around a number to a given precision in
+
+352
+00:22:48,670 --> 00:22:52,840
+decimal digits. So the first is the number you want to round,
+
+353
+00:22:53,140 --> 00:22:57,850
+and the second is the number of digits that you want after the dot
+
+354
+00:22:57,880 --> 00:23:02,080
+basically. Now that we've gotten hold of the change,
+
+355
+00:23:02,110 --> 00:23:05,260
+we're going to print and tell the user,
+
+356
+00:23:05,440 --> 00:23:09,730
+basically, here is this many dollars in change.
+
+357
+00:23:11,260 --> 00:23:14,860
+And of course I have to add an F to activate that fstring.
+
+358
+00:23:16,570 --> 00:23:21,010
+So now we're ready to call is_transaction_successful
+
+359
+00:23:21,550 --> 00:23:25,630
+and we're going to pass in the money_received and the drink_cost.
+
+360
+00:23:26,050 --> 00:23:30,280
+So the money_received is, of course, going to be the payment from the previous step
+
+361
+00:23:30,730 --> 00:23:35,530
+that was calculated from all the coins and the drink_cost is going to be based
+
+362
+00:23:35,530 --> 00:23:38,650
+on the drink and it's under the key cost,
+
+363
+00:23:38,980 --> 00:23:43,750
+which we can confirm up here. So the drink is this dictionary,
+
+364
+00:23:44,080 --> 00:23:46,550
+and then there's the ingredients and the cost.
+
+365
+00:23:48,760 --> 00:23:49,030
+Right.
+
+366
+00:23:49,030 --> 00:23:54,030
+Let's rerun our code and let's test it out with something. Let's say
+
+367
+00:23:54,070 --> 00:23:57,100
+I want a latte. Please insert coins.
+
+368
+00:23:57,280 --> 00:24:02,170
+Let's say we tried to insert insufficient coins.
+
+369
+00:24:03,700 --> 00:24:07,150
+It tells us, sorry, that's not enough money. Money is refunded.
+
+370
+00:24:07,660 --> 00:24:11,020
+But let's try giving it enough coins this time.
+
+371
+00:24:13,750 --> 00:24:14,950
+And in this case,
+
+372
+00:24:14,980 --> 00:24:19,980
+it accepts it and it tells us here's $2.42 in change rounded to two decimal places,
+
+373
+00:24:21,700 --> 00:24:25,570
+and we're ready to take another drink. So now if we hit report,
+
+374
+00:24:25,630 --> 00:24:30,630
+you can see that we've now earned some money in our machine and all our code is
+
+375
+00:24:30,730 --> 00:24:32,440
+working as expected.
+
+376
+00:24:33,550 --> 00:24:37,450
+So we're now ready to tackle the final part, which is to make coffee.
+
+377
+00:24:38,050 --> 00:24:42,580
+If the transaction is successful and there are enough resources to make the
+
+378
+00:24:42,580 --> 00:24:42,880
+drinks
+
+379
+00:24:42,880 --> 00:24:47,350
+the user selected, then the ingredients to make the drink should be deducted from
+
+380
+00:24:47,350 --> 00:24:51,010
+the coffee machine's resources. For example, before I purchased a latte
+
+381
+00:24:51,070 --> 00:24:52,660
+I have 300ml of water.
+
+382
+00:24:53,050 --> 00:24:57,010
+After I purchased the latte that gets reduced by 200 to 100,
+
+383
+00:24:57,340 --> 00:25:00,520
+and the same happens to the other ingredient values.
+
+384
+00:25:00,790 --> 00:25:04,750
+But of course the money goes up because I've already taken payment in the
+
+385
+00:25:04,750 --> 00:25:08,770
+previous step. Let's take this into an if statement
+
+386
+00:25:08,800 --> 00:25:13,800
+because remember this function returns true when the payment is accepted or false
+
+387
+00:25:14,440 --> 00:25:15,820
+if their money is insufficient.
+
+388
+00:25:16,240 --> 00:25:19,510
+So this is where we're going to call on next function
+
+389
+00:25:19,540 --> 00:25:23,740
+which is to make coffee. So let's create
+
+390
+00:25:23,770 --> 00:25:27,940
+make_coffee. In order to make coffee
+
+391
+00:25:27,940 --> 00:25:32,940
+we need to know the drink name so that we can tell the user here's your
+
+392
+00:25:33,910 --> 00:25:34,810
+particular drink.
+
+393
+00:25:35,230 --> 00:25:39,130
+And it will also need to have the order ingredients.
+
+394
+00:25:40,060 --> 00:25:45,060
+The goal of this function is to deduct the required ingredients from the
+
+395
+00:25:46,960 --> 00:25:49,660
+resources. In order to do that,
+
+396
+00:25:49,840 --> 00:25:54,840
+we're going to get hold of the order ingredients and we're going to loop
+
+397
+00:25:55,900 --> 00:26:00,730
+through them. So for each of the items in the order_ingredients,
+
+398
+00:26:01,630 --> 00:26:05,770
+we're going to look inside the resources for that particular item
+
+399
+00:26:06,220 --> 00:26:10,570
+and we're going to subtract the amount that's in the order_ingredients.
+
+400
+00:26:11,620 --> 00:26:14,410
+And once all of that is done, so the for loop
+
+401
+00:26:14,440 --> 00:26:19,440
+ends, then we can print and we can even add an emoji to this.
+
+402
+00:26:21,160 --> 00:26:21,993
+Right.
+
+403
+00:26:22,390 --> 00:26:22,930
+On a Mac
+
+404
+00:26:22,930 --> 00:26:27,850
+you can insert an emoji by going to edit, emoji, and symbols. On Windows
+
+405
+00:26:27,850 --> 00:26:32,560
+the easiest thing to do is to just search Google for a coffee emoji
+
+406
+00:26:32,890 --> 00:26:35,200
+and then copy and paste it into your code.
+
+407
+00:26:35,860 --> 00:26:40,060
+So now let's call make_coffee here and notice how
+
+408
+00:26:40,240 --> 00:26:42,940
+if we are here the machine is on
+
+409
+00:26:44,250 --> 00:26:47,610
+and it's not any of these other previous choices,
+
+410
+00:26:48,270 --> 00:26:52,530
+and then the resource is sufficient and the transaction is successful.
+
+411
+00:26:52,560 --> 00:26:57,560
+These are all the steps that it took us to get to this particular stage in our
+
+412
+00:26:57,630 --> 00:26:58,463
+code.
+
+413
+00:26:58,680 --> 00:27:02,790
+So now we're going to make the coffee and we're going to pass in two things.
+
+414
+00:27:02,820 --> 00:27:06,900
+So let's just see the prompt again. We need to give the drink name
+
+415
+00:27:06,960 --> 00:27:11,960
+which is going to be the choice that the user entered, and the order ingredients
+
+416
+00:27:12,060 --> 00:27:16,260
+which is going to come from the drink and it's under the key ingredients.
+
+417
+00:27:17,700 --> 00:27:21,810
+So now we're ready to test and run our code once more.
+
+418
+00:27:22,230 --> 00:27:26,340
+Let's say, I want a latte and I'm going to insert lots of money.
+
+419
+00:27:27,180 --> 00:27:31,200
+And now I have my latte. If I hit report,
+
+420
+00:27:31,350 --> 00:27:36,150
+you should be able to see that a bunch of resources were subtracted and the
+
+421
+00:27:36,150 --> 00:27:40,800
+money is increased. If I try to order another latte,
+
+422
+00:27:40,830 --> 00:27:45,750
+it should fail because there is not enough water and there's not enough milk.
+
+423
+00:27:46,620 --> 00:27:51,030
+You can see that it's not going to let me go through as long as one of the
+
+424
+00:27:51,030 --> 00:27:52,770
+ingredients is not enough.
+
+425
+00:27:54,390 --> 00:27:59,070
+So we've now managed to fulfill all of the requirements of our coffee machine
+
+426
+00:27:59,100 --> 00:28:00,450
+program. Now,
+
+427
+00:28:00,450 --> 00:28:04,620
+this probably a lot more complexity that you could add to your coffee machine,
+
+428
+00:28:05,010 --> 00:28:10,010
+but basically what I wanted to show you today is how you would program something
+
+429
+00:28:11,160 --> 00:28:12,660
+that exists in real life,
+
+430
+00:28:12,690 --> 00:28:17,690
+like a coffee machine and even something that seems as simple as a coffee
+
+431
+00:28:18,030 --> 00:28:20,760
+machine. It can lead to a lot of errors,
+
+432
+00:28:20,790 --> 00:28:25,080
+a lot of bugs and a lot of anguish, but its good.
+
+433
+00:28:25,080 --> 00:28:26,370
+The more that you struggle,
+
+434
+00:28:26,670 --> 00:28:31,170
+the closer you get towards your goals. And the clearer the role of the function,
+
+435
+00:28:31,560 --> 00:28:35,100
+the easier it will be for you to untangle the logic.
+
+436
+00:28:36,480 --> 00:28:39,990
+If you want to take a look at the completed code that I've written in this
+
+437
+00:28:39,990 --> 00:28:40,823
+lesson,
+
+438
+00:28:40,860 --> 00:28:45,000
+then simply head over to the link that's in the resources and you'll be able to
+
+439
+00:28:45,000 --> 00:28:45,720
+see it in
+
+440
+00:28:45,720 --> 00:28:50,700
+Repl.it. Make sure that you've managed to fix any issues in your code
+
+441
+00:28:51,060 --> 00:28:56,060
+and that it runs exactly the same way as expected in the program requirements.
+
